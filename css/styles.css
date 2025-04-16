@@ -1,0 +1,82 @@
+/* Custom Properties */
+:root {
+    --color-1: hsl(12, 75%, 45%);
+    --color-text-dark: hsl(0, 0%, 8%);
+    --color-gray-10: hsl(120, 1%, 93%);
+}
+
+/* Preloader Animation */
+#preloader {
+    transition: all 0.6s 0.9s ease-in-out;
+}
+
+.ss-loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.dots-fade > div {
+    animation: dots-fade 1.6s infinite ease;
+    animation-delay: 0.4s;
+}
+
+.dots-fade > div:nth-of-type(1) {
+    animation-delay: 0.8s;
+}
+
+.dots-fade > div:nth-of-type(3) {
+    animation-delay: 0s;
+}
+
+@keyframes dots-fade {
+    0% { opacity: 1; }
+    40% { opacity: 0.2; }
+    80% { opacity: 1; }
+}
+
+/* Section Numbering */
+.section-num {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+}
+
+/* Mobile Menu */
+.menu-is-open .s-header__nav {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-text-dark);
+    padding: 1.5rem 2rem;
+}
+
+.menu-is-open .s-header__menu-links {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-is-open .s-header__menu-links li {
+    margin-bottom: 1rem;
+}
+
+.s-header__menu-toggle.is-clicked span {
+    background: transparent;
+}
+
+.s-header__menu-toggle.is-clicked span::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.s-header__menu-toggle.is-clicked span::after {
+    bottom: 0;
+    transform: rotate(225deg);
+}
+
+/* Project Hover Effect */
+.entry:hover .entry__info {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhero Hinggo - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com/3.4.14"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-1': 'hsl(12, 75%, 45%)',
+                        'color-1-light': 'hsl(12, 75%, 55%)',
+                        'color-text-dark': 'hsl(0, 0%, 8%)',
+                        'color-gray-1': 'hsl(120, 1%, 99%)',
+                        'color-gray-10': 'hsl(120, 1%, 93%)',
+                        'color-gray-11': 'hsl(120, 1%, 83%)',
+                        'color-gray-14': 'hsl(120, 1%, 56%)',
+                        'color-gray-15': 'hsl(120, 1%, 47%)',
+                    },
+                    fontFamily: {
+                        'public-sans': ['Public Sans', 'sans-serif'],
+                        'castoro': ['Castoro', 'serif'],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="scroll-smooth bg-color-gray-1 font-public-sans text-color-text-dark">
+    <div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-color-gray-10 opacity-100 transition-opacity duration-600">
+        <div id="loader" class="dots-fade relative inline-block w-1 h-1">
+            <div class="absolute top-0 left-0 w-1 h-1 bg-color-text-dark rounded-full"></div>
+            <div class="absolute top-0 left-[15px] w-1 h-1 bg-color-text-dark rounded-full"></div>
+            <div class="absolute top-0 left-[-15px] w-1 h-1 bg-color-text-dark rounded-full"></div>
+        </div>
+    </div>
+
+    <header class="s-header fixed top-0 left-0 w-full z-30 bg-transparent">
+        <div class="s-header__inner mx-auto max-w-7xl px-6 py-4 bg-color-text-dark border border-white/10 shadow-md flex items-center justify-between">
+            <div class="s-header__logo">
+                <a href="index.html" class="text-white font-castoro text-2xl">Jhero Hinggo</a>
+            </div>
+            <nav class="s-header__nav hidden md:flex">
+                <ul class="s-header__menu-links flex space-x-4">
+                    <li><a href="#intro" class="text-gray-400 hover:text-white font-public-sans text-base">Home</a></li>
+                    <li><a href="#education" class="text-gray-400 hover:text-white font-public-sans text-base">Education</a></li>
+                    <li><a href="#skills" class="text-gray-400 hover:text-white font-public-sans text-base">Skills</a></li>
+                    <li><a href="#projects" class="text-gray-400 hover:text-white font-public-sans text-base">Projects</a></li>
+                </ul>
+            </nav>
+            <a class="s-header__menu-toggle md:hidden text-white" href="#0">
+                <span class="block w-7 h-0.5 bg-white relative top-1/2 right-2">
+                    <span class="absolute w-full h-full bg-white -top-2.5"></span>
+                    <span class="absolute w-full h-full bg-white top-2.5"></span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <section id="intro" class="s-intro min-h-screen bg-color-gray-10 relative pt-32 pb-16 flex items-center">
+        <div class="s-intro__content mx-auto max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="s-intro__content-text flex flex-col justify-center">
+                <h3 class="text-pretitle text-color-1 uppercase font-semibold text-lg tracking-wider">Hello, I'm</h3>
+                <h1 class="text-display-title font-castoro text-5xl lg:text-7xl leading-tight mt-2 mb-6">Jhero Hinggo</h1>
+                <div class="s-intro__content-btns flex space-x-4">
+                    <a href="#projects" class="btn btn--primary bg-color-1 text-white uppercase font-medium text-sm tracking-wider py-3 px-8 border-2 border-color-1 hover:bg-color-1-light hover:border-color-1-light">View Projects</a>
+                    <a href="mailto:jhero@example.com" class="btn btn--stroke text-color-text-dark uppercase font-bold text-sm tracking-wider py-3 px-8 border-2 border-color-text-dark hover:bg-color-text-dark hover:text-white">Contact Me</a>
+                </div>
+            </div>
+            <div class="s-intro__content-media relative">
+                <img src="this.png" alt="Jhero Hinggo" class="w-full h-full object-cover">
+            </div>
+            <div class="s-intro__social absolute bottom-12 right-6 lg:right-12 flex flex-col space-y-2">
+                <a href="https://linkedin.com" class="text-white"><svg class="w-6 h-6"><path fill="currentColor" d="M0 0h24v24H0z"/></svg></a>
+                <a href="https://github.com" class="text-white"><svg class="w-6 h-6"><path fill="currentColor" d="M0 0h24v24H0z"/></svg></a>
+            </div>
+            <div class="s-intro__scroll-down absolute bottom-6 right-6 lg:right-12 text-white">
+                <a href="#education" class="flex items-center space-x-2">
+                    <div class="scroll-icon w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4"><path fill="currentColor" d="M12 16l-6-6h12z"/></svg>
+                    </div>
+                    <span class="text-sm">Scroll</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="s-about py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="section-header relative mb-12">
+                <h2 class="text-display-title font-castoro text-4xl">Education</h2>
+                <span class="section-num text-gray-200 text-8xl absolute -top-4 -left-4 opacity-50">01</span>
+            </div>
+            <div class="s-about__blocks">
+                <h3 class="text-2xl font-castoro mb-4 relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-2 before:bg-color-1">Bachelor of Science in Information Technology</h3>
+                <p class="mb-4">Ateneo de Davao Unviversity, 2023 - Present</p>
+            </div>
+            <div class="s-about__blocks">
+                <h3 class="text-2xl font-castoro mb-4 relative pl-4 before:content-[''] before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-1 before:h-2 before:bg-color-1">General Academic Strand</h3>
+                <p class="mb-4">Davao Doctors' College, 2021 - 2023</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="s-about py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="section-header relative mb-12">
+                <h2 class="text-display-title font-castoro text-4xl">Skills</h2>
+                <span class="section-num text-gray-200 text-8xl absolute -top-4 -left-4 opacity-50">02</span>
+            </div>
+            <div class="s-about__blocks">
+                <ul class="skill-bars space-y-6">
+                    <li class="flex items-center">
+                        <div class="flex-1">
+                            <div class="progress bg-color-text-dark h-2 relative" style="width: 90%;">
+                                <span class="absolute -top-8 right-0 bg-color-text-dark text-white text-xs px-2 py-1 rounded after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:-ml-1 after:border-4 after:border-transparent after:border-t-color-text-dark">90%</span>
+                            </div>
+                        </div>
+                        <strong class="ml-4 text-sm uppercase font-semibold">Python</strong>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="flex-1">
+                            <div class="progress bg-color-text-dark h-2 relative" style="width: 85%;">
+                                <span class="absolute -top-8 right-0 bg-color-text-dark text-white text-xs px-2 py-1 rounded after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:-ml-1 after:border-4 after:border-transparent after:border-t-color-text-dark">85%</span>
+                            </div>
+                        </div>
+                        <strong class="ml-4 text-sm uppercase font-semibold">JavaScript</strong>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="flex-1">
+                            <div class="progress bg-color-text-dark h-2 relative" style="width: 80%;">
+                                <span class="absolute -top-8 right-0 bg-color-text-dark text-white text-xs px-2 py-1 rounded after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:-ml-1 after:border-4 after:border-transparent after:border-t-color-text-dark">80%</span>
+                            </div>
+                        </div>
+                        <strong class="ml-4 text-sm uppercase font-semibold">React</strong>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="flex-1">
+                            <div class="progress bg-color-text-dark h-2 relative" style="width: 75%;">
+                                <span class="absolute -top-8 right-0 bg-color-text-dark text-white text-xs px-2 py-1 rounded after:content-[''] after:absolute after:left-1/2 after:-bottom-2 after:-ml-1 after:border-4 after:border-transparent after:border-t-color-text-dark">75%</span>
+                            </div>
+                        </div>
+                        <strong class="ml-4 text-sm uppercase font-semibold">Node.js</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="s-works py-24">
+        <div class="mx-auto max-w-7xl px-6">
+            <div class="section-header relative mb-12">
+                <h2 class="text-display-title font-castoro text-4xl">Projects</h2>
+                <span class="section-num text-gray-200 text-8xl absolute -top-4 -left-4 opacity-50">03</span>
+            </div>
+            <div class="folio-entries grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="entry relative overflow-hidden">
+                    <a href="https://project1.example.com" class="block relative">
+                        <img src="pomodoro.png" alt="Project 1" class="w-full h-auto transition-transform duration-300">
+                        <div class="entry__info absolute inset-0 bg-color-text-dark/80 opacity-0 translate-y-full transition-all duration-300 flex flex-col items-center justify-center text-center">
+                            <div class="entry__cat text-gray-400 text-sm uppercase">A time management technique that helps improve focus and productivity built using Java.</div>
+                            <h4 class="entry__title text-white font-medium text-lg mt-2">Pomodoro Timer</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="entry relative overflow-hidden">
+                    <a href="https://project2.example.com" class="block relative">
+                        <img src="order.webp" alt="Project 2" class="w-full h-auto transition-transform duration-300">
+                        <div class="entry__info absolute inset-0 bg-color-text-dark/80 opacity-0 translate-y-full transition-all duration-300 flex flex-col items-center justify-center text-center">
+                            <div class="entry__cat text-gray-400 text-sm uppercase">Developed using Java. It allows users to browse products, add selected items, and remove items if needed. Additionally, the system includes an order tracking feature, enabling users to monitor the status of their purchases.</div>
+                            <h4 class="entry__title text-white font-medium text-lg mt-2">Ordering System with Order Tracking</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(() => document.body.classList.add("ss-loaded"), 100);
+            const toggle = document.querySelector(".s-header__menu-toggle");
+            toggle.addEventListener("click", function(e) {
+                e.preventDefault();
+                this.classList.toggle("is-clicked");
+                document.body.classList.toggle("menu-is-open");
+            });
+        });
+    </script>
+</body>
+</html>
